@@ -5,7 +5,7 @@ import backgroundImage from '../../images/background2.jpg';
 
 
 const Profile = () => {
-    const SERVER_ROOT_URL="https://tombook.azurewebsites.net/"
+    const SERVER_ROOT_URL="https://john-webapp.azurewebsites.net/"
     console.log(SERVER_ROOT_URL);
     const submitData = async () => {
         const data = {
