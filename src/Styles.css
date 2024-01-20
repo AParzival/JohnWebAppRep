@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,8 +31,7 @@ span {
     vertical-align: middle;
 }
 
-/* Text Styles*/
-
+/* Text Styles */
 h1,
 h2,
 h3,
@@ -70,93 +68,58 @@ p {
     margin-bottom: 1rem;
 }
 
-
 /* Main logo */
-
-
 .headerlogo {
     height: 100px;
     width: 100px;
     position: relative;
-    left: 690%;
-}
-/* Landing Bacground image */
-.Landingbackground {
-    z-index: 1;
-    height: 470px;
-    width: 100%;
-    left: 0%;
-}
-/* Person on phone landing page image */
-.persononphone {
-    z-index: 3;
-    height: 470px;
-    width: 460px;
-    position: absolute;
-    top: 261px;
-    left: 1076px;
-}
-.welcomeBox{
-    z-index: 1;
-    top: 280px;
-    left: 50px;
-    position: absolute;
-    color: white;
-}
-    
-/* Signup Box */
-.homeh1 {
-    text-align: center;
-    font-size: 30px;
-    padding-top: 10px;
-    height: 50px;
-    bottom: 10px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 20px;
+    left: 0;
 }
 
+/* Signup Box */
 .formbox {
     width: 90%;
     max-width: 450px;
     position: absolute;
     border-radius: 50px;
-    top: 67%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(225, 224, 224);
-    padding: 10px 10px 20px;
+    padding: 10px 20px 20px;
     text-align: center;
-}
-
-.inputfield {
-    padding-left: 110px;
-    width: 150%;
-    margin: 15px 0;
-    border-radius: 0%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-
-
 }
 
-.input {
-    width: 100%;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    padding: 15px 15px;
-
-}
-.App {
-    text-align: center;
-    font-size: 15px;
-    padding-top: 10px;
-    height: 50px;
-    bottom: 10px;
-    color: rgb(30, 174, 246);
+.header-text {
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
+.inputfield {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.input {
+    width: calc(100% - 30px);
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.subbutton {
+    width: 100%;
+    max-width: 370px;
+    margin-top: 20px;
+}
+
+/* Description */
 .discription {
     z-index: 1;
     font-size: larger;
@@ -164,9 +127,4 @@ p {
     left: 50px;
     position: absolute;
     color: white;
-}
-.subbutton {
-width: 370px;
-    
-    
 }
