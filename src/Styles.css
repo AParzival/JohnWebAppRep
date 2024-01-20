@@ -1,179 +1,86 @@
-/* Font Import */
+/* Styles.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
-/* Reset Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Body Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    background-color: var(--color-white);
-    color: var(--color-dark);
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
 }
 
-/* Links Styles */
-a {
-    color: inherit;
-    text-decoration: none;
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
-/* List Styles */
-ul {
-    list-style: none;
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-/* Image Styles */
-img {
-    width: 100%;
+.navbar nav ul li {
+  margin: 0 15px;
 }
 
-/* Span Styles */
-span {
-    vertical-align: middle;
-}
-
-/* Text Styles */
-h1, h2, h3, h4, h5 {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-}
-
-h1 { margin-top: 0; font-size: 3.052rem; }
-h2 { font-size: 2.441rem; }
-h3 { font-size: 1.953rem; }
-h4 { font-size: 1.563rem; }
-h5 { font-size: 1.25rem; }
-
-p {
-    margin-bottom: 1rem;
-}
-
-/* Main Logo Styles */
 .headerlogo {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+  max-width: 50px;
 }
 
-/* Landing Background Styles */
-.Landingbackground {
-    z-index: -1;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
+.landing-container {
+  text-align: center;
+  padding: 50px;
 }
 
-/* Person on Phone Styles */
 .persononphone {
-    z-index: 3;
-    height: 470px;
-    max-width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  max-width: 100%;
 }
 
-/* Welcome Box Styles */
-.welcomeBox {
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.welcomeBox h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-/* Description Styles */
-.description {
-    z-index: 1;
-    font-size: 1.2rem;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    color: white;
-    text-align: center;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-/* App Styles */
-.App {
-    text-align: center;
-    font-size: 1rem;
-    padding: 10px 0;
-    color: rgb(30, 174, 246);
-    margin-bottom: 20px;
-}
-
-/* Signup Box Styles */
-.homeh1 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    height: 50px;
-    color: rgb(0, 0, 0);
+.landing-background {
+  max-width: 100%;
 }
 
 .formbox {
-    width: 90%;
-    max-width: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(225, 224, 224);
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
 }
 
-.inputfield {
-    width: 100%;
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
+.formbox h1 {
+  font-size: 24px;
+  color: #333;
 }
 
 .input {
-    width: calc(100% - 20px);
-    padding: 15px;
-    background: transparent;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: 0;
+  margin-top: 20px;
 }
 
-.subbutton {
-    width: 100%;
-    max-width: 370px;
-    padding: 15px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.inputfield {
+  margin-bottom: 15px;
 }
 
-.subbutton:hover {
-    background-color: #217dbb;
+.inputfield input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subbutton input {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subbutton input:hover {
+  background-color: #0056b3;
 }
