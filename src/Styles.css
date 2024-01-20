@@ -10,12 +10,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #f8f8f8; /* Light gray background */
+    background-color: #f4f4f4; /* Light gray background */
     color: #333; /* Dark text color */
 }
 
 a {
-    color: #007bff; /* Blue link color */
+    color: #3498db; /* Blue link color */
     text-decoration: none;
 }
 
@@ -38,28 +38,28 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 2.5rem; /* Adjusted font size */
+    font-size: 3rem; /* Larger font size for emphasis */
     margin-top: 0;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* Increased margin for better readability */
 }
 
 /* Main logo */
@@ -67,42 +67,52 @@ p {
 .headerlogo {
     height: 80px; /* Adjusted height */
     width: 80px; /* Adjusted width */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 20px auto; /* Centered with margin */
 }
 
 /* Landing Background image */
-
 .Landingbackground {
-    height: 100vh; /* Full viewport height */
+    height: 470px;
     width: 100%;
-    object-fit: cover; /* Ensure the image covers the entire container */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Person on phone landing page image */
+.persononphone {
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure the persononphone image is above the background */
 }
 
 /* Signup Box */
 
 .homeh1 {
     text-align: center;
-    font-size: 2rem; /* Adjusted font size */
-    padding-top: 10px;
-    height: 50px;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    padding-top: 20px; /* Increased padding for spacing */
+    height: 60px; /* Adjusted height */
     color: #333; /* Dark text color */
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for spacing */
 }
 
 .formbox {
     width: 90%;
     max-width: 400px; /* Adjusted max-width */
-    margin: auto;
-    border-radius: 10px; /* Adjusted border-radius */
+    margin: 0 auto; /* Centered */
+    border-radius: 10px; /* Rounded corners */
     background-color: #fff; /* White background */
-    padding: 20px;
+    padding: 30px; /* Increased padding for spacing */
     text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
 }
 
 .inputfield {
-    margin: 15px 0;
+    margin: 20px 0; /* Increased margin for spacing */
 }
 
 .input {
@@ -116,22 +126,33 @@ p {
 
 .App {
     text-align: center;
-    font-size: 1rem; /* Adjusted font size */
-    padding-top: 10px;
-    height: 50px;
+    font-size: 1.2rem; /* Adjusted font size */
+    padding-top: 20px; /* Increased padding for spacing */
+    height: 60px; /* Adjusted height */
     color: #1eaef6; /* Blue text color */
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for spacing */
 }
 
 .discription {
-    font-size: 1rem; /* Adjusted font size */
-    color: #fff; /* White text color */
+    font-size: 1rem;
+    color: #555; /* Dark gray text color */
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px; /* Increased margin for spacing */
 }
 
 .subbutton {
     width: 100%; /* Full width */
     max-width: 400px; /* Adjusted max-width */
     margin: 0 auto; /* Centered */
+    background-color: #3498db; /* Blue button color */
+    color: #fff; /* White text color */
+    padding: 15px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.subbutton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
 }
