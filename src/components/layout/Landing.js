@@ -22,8 +22,8 @@ const Landing = ({ isAuthenticated }) => {
                 <div className="discription">
                     This site is for people who know John
                 </div>
-                <div>
-                    <img src={backGround2} className='Landingbackground' alt='landing background'/>
+                <div className="Landingbackground">
+                    <img src={backGround2} alt='landing background'/>
                     <img src={personWithPhone} className='persononphone' alt='person with phone'/>
                 </div>
             </header>

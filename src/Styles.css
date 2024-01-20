@@ -75,7 +75,7 @@ p {
     height: 470px;
     width: 100%;
     position: relative;
-    overflow: hidden; /* Ensure child elements stay within the container */
+    overflow: hidden;
 }
 
 /* Person on phone landing page image */
@@ -83,9 +83,10 @@ p {
     height: auto;
     max-width: 100%;
     position: absolute;
-    top: 50%; /* Adjusted positioning */
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure the persononphone image is above the background */
 }
 
 /* Signup Box */
