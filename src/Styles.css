@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,8 +10,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    background-color: var(--color-white);
-    color: var(--color-dark);
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
 }
 
 a {
@@ -27,11 +27,8 @@ img {
     width: 100%;
 }
 
-span {
-    vertical-align: middle;
-}
+/* Text Styles*/
 
-/* Text Styles */
 h1,
 h2,
 h3,
@@ -66,36 +63,66 @@ h5 {
 
 p {
     margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for body text */
 }
 
+
 /* Main logo */
+
+
 .headerlogo {
     height: 100px;
     width: 100px;
     position: relative;
-    left: 0;
+    left: 690%;
+}
+
+/* Landing Bacground image */
+.Landingbackground {
+    z-index: 1;
+    height: 470px;
+    width: 100%;
+    left: 0%;
+}
+
+/* Person on phone landing page image */
+.persononphone {
+    z-index: 3;
+    height: 470px;
+    width: 460px;
+    position: absolute;
+    top: 261px;
+    left: 1076px;
+}
+
+.welcomeBox {
+    z-index: 1;
+    top: 280px;
+    left: 50px;
+    position: absolute;
+    color: white;
 }
 
 /* Signup Box */
-.formbox {
-    width: 90%;
-    max-width: 450px;
-    position: absolute;
-    border-radius: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(225, 224, 224);
-    padding: 10px 20px 20px;
+.homeh1 {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 30px;
+    padding-top: 10px;
+    height: 50px;
+    bottom: 10px;
+    color: #000;
+    margin-bottom: 20px;
 }
 
-.header-text {
-    font-size: 30px;
-    margin-bottom: 20px;
+.formbox {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto; /* Center the form box */
+    border-radius: 10px;
+    background-color: #fff; /* White background for the form box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    padding: 20px;
+    text-align: center;
 }
 
 .inputfield {
@@ -106,20 +133,23 @@ p {
 .input {
     width: calc(100% - 30px);
     background: transparent;
-    border: 0;
-    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
     padding: 15px;
-    border-radius: 8px;
-    margin-top: 10px;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for input text */
 }
 
-.subbutton {
-    width: 100%;
-    max-width: 370px;
-    margin-top: 20px;
+.App {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    height: 50px;
+    bottom: 10px;
+    color: #1eaef6;
+    margin-bottom: 20px;
 }
 
-/* Description */
 .discription {
     z-index: 1;
     font-size: larger;
@@ -127,4 +157,8 @@ p {
     left: 50px;
     position: absolute;
     color: white;
+}
+
+.subbutton {
+    width: 100%;
 }
