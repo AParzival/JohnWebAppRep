@@ -31,8 +31,6 @@ body {
 .persononphone {
     max-width: 200px; /* Set maximum width to 100% of its container */
     max-height: 200px; /* Set maximum height as needed */
-    width: auto; /* Ensure the image maintains its aspect ratio */
-    height: auto; /* Ensure the image maintains its aspect ratio */
   }
 .landing-container {
   text-align: center;
