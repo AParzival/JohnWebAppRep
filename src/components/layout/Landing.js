@@ -1,32 +1,37 @@
-// LandingPage.js
-
-import React from 'react';
-import { Navigate } from 'react-router-dom';
+import React, { Fragment } from 'react';
+import { Link, Navigate } from 'react-router-dom';
+import logo from '../../images/logo1.jpg';
 import personWithPhone from '../../images/persononphone.png';
-import background2 from '../../images/background2.jpg';
-import styles from './landingPage.css';
+import backGround2 from '../../images/background2.jpg';
+import '../../Styles.css';
 
-const LandingPage = ({ isAuthenticated }) => {
+const Landing = ({ isAuthenticated }) => {
+    console.log("landing");
     if (isAuthenticated) {
-        return <Navigate to="/dashboard" />;
-    }
+        
+		return <Navigate to="/dashboard" />;
+	}
 
-    return (
-        <div className={styles.landingContainer}>
-            <header className={styles.header}>
-                <div className={styles.welcomeBox}>
-                    <h1>Welcome to Insta John</h1>
-                </div>
-                <div className={styles.description}>
-                    Connecting with friends who know John
-                </div>
-                <div className={styles.imagesContainer}>
-                    <img src={personWithPhone} className={styles.personOnPhone} alt='person with phone' />
-                    <img src={background2} className={styles.landingBackground} alt='landing background' />
-                </div>
-            </header>
+	return (
+		<Fragment>
+			<header className="App-header">
+        <div className="welcomeBox">
+        <h1>
+          Insta John Main Page
+        </h1>
         </div>
-    );
+        <div className="discription">
+          This site is for people who know John
+          </div>
+       <div>   
+       <img src={personWithPhone} className='persononphone' alt='person with phone'/>
+       <img src={backGround2} className='Landingbackground' alt='landing background'/>
+       </div>
+      </header>
+		</Fragment>
+	);
 };
 
-export default LandingPage;
+
+export default Landing;
+
