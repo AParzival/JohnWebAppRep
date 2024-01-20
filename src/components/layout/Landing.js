@@ -17,11 +17,11 @@ const Landing = ({ isAuthenticated }) => {
 			<header className="App-header">
         <div className="welcomeBox">
         <h1>
-          Hello world
+          Insta John Main Page
         </h1>
         </div>
         <div className="discription">
-          This website for all of Tom's Friends to connect with each other.
+          This site is for people who know John
           </div>
        <div>   
        <img src={personWithPhone} className='persononphone' alt='person with phone'/>
