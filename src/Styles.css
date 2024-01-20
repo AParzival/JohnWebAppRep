@@ -75,51 +75,65 @@ p {
 
 
 .headerlogo {
-    height: 100px;
-    width: 100px;
-    position: relative;
-    left: 690%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
-/* Landing Bacground image */
+
 .Landingbackground {
-    z-index: 1;
-    height: 470px;
+    z-index: -1;
+    height: 100vh;
     width: 100%;
-    left: 0%;
+    object-fit: cover;
 }
-/* Person on phone landing page image */
+
 .persononphone {
     z-index: 3;
     height: 470px;
-    width: 460px;
+    max-width: 100%;
     position: absolute;
-    top: 261px;
-    left: 1076px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.welcomeBox{
+
+.welcomeBox {
     z-index: 1;
-    top: 280px;
-    left: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.welcomeBox h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    z-index: 1;
+    font-size: 1.2rem;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     color: white;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
 }
-.discription {
-    z-index: 1;
-    font-size: larger;
-    top: 650px;
-    left: 50px;
-    position: absolute;
-    color: white;
-}
+
 .App {
     text-align: center;
-    font-size: 15px;
-    padding-top: 10px;
-    height: 50px;
-    bottom: 10px;
+    font-size: 1rem;
+    padding: 10px 0;
     color: rgb(30, 174, 246);
     margin-bottom: 20px;
 }
+
     
 /* Signup Box */
 .homeh1 {
