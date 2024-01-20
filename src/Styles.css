@@ -73,6 +73,14 @@ img {
     text-align: center;
 }
 
+.headerlogo {
+    height: 80px; /* Adjust the logo height */
+    width: 80px; /* Adjust the logo width */
+    position: absolute;
+    top: 10px; /* Adjust the top position */
+    left: 10px; /* Adjust the left position */
+}
+
 .welcomeBox {
     position: absolute;
     top: 50%;
@@ -97,9 +105,10 @@ h1 {
 /* Image Styles */
 .persononphone {
     position: absolute;
-    top: 20%;
-    right: 5%;
-    max-width: 50%; /* Adjust the maximum width */
+    top: 40%; /* Adjust the top position */
+    left: 50%; /* Adjust the left position */
+    transform: translateX(-50%);
+    max-width: 60%; /* Adjust the maximum width */
     height: auto;
     border-radius: 10px; /* Optional: Add border-radius for a rounded look */
 }
@@ -116,10 +125,28 @@ h1 {
 
 /* Main logo */
 .headerlogo {
-    height: 100px;
-    width: 100px;
-    position: relative;
-    left: 690%;
+    height: 80px; /* Adjust the logo height */
+    width: 80px; /* Adjust the logo width */
+    position: absolute;
+    top: 10px; /* Adjust the top position */
+    left: 10px; /* Adjust the left position */
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute;
+    top: 120px; /* Adjust the top position */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
 }
 
 /* Signup Box */
