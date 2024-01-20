@@ -1,3 +1,5 @@
+/* Styles.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 * {
@@ -10,7 +12,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    background-color: var(--color-white);
+    background-color: #1a1a1a; /* Darker background color */
     color: var(--color-dark);
 }
 
@@ -108,7 +110,7 @@ p {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #000; /* Black text */
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -121,7 +123,7 @@ p {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #000; /* Black text */
     text-align: center;
 }
 
