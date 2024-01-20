@@ -29,8 +29,8 @@ body {
   max-width: 50px;
 }
 .persononphone {
-    max-width: 100%; /* Set maximum width to 100% of its container */
-    max-height: 300px; /* Set maximum height as needed */
+    max-width: 200px; /* Set maximum width to 100% of its container */
+    max-height: 200px; /* Set maximum height as needed */
     width: auto; /* Ensure the image maintains its aspect ratio */
     height: auto; /* Ensure the image maintains its aspect ratio */
   }
