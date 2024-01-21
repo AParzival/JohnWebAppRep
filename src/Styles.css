@@ -93,7 +93,7 @@ p {
 }
 
 .Landing-header {
-    color: #4e84e9;
+    color: #e94e4e;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -172,13 +172,13 @@ p {
     padding-top: 20px;
     height: 50px;
     bottom: 10px;
-    color: #1eaef6;
+    color: #1ef654;
     margin-bottom: 20px;
 }
 
 /* NavBar Styles */
 .navbar {
-    background-color: #3498db;
+    background-color: #db3434;
     padding: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -214,7 +214,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2980b9;
+    color: #8bc4eb;
 }
 
 /* Profile Page Styles */
@@ -223,7 +223,7 @@ nav ul li a:hover {
     max-width: 500px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #000000;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
@@ -236,7 +236,7 @@ nav ul li a:hover {
 .inputfield input {
     width: 100%;
     padding: 15px;
-    border: 2px solid #3498db;
+    border: 2px solid #db3434;
     border-radius: 5px;
     font-size: 16px;
     color: #555;
