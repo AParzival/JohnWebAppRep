@@ -1,7 +1,7 @@
 // Landing.jsx
 
 import React, { Fragment } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import logo from '../../images/logo1.jpg';
 import personWithPhone from '../../images/persononphone.png';
 import backGround2 from '../../images/background2.jpg';
@@ -9,7 +9,9 @@ import '../../Styles.css';
 
 const Landing = ({ isAuthenticated }) => {
     console.log("landing");
+
     if (isAuthenticated) {
+        // Redirect to the dashboard if the user is authenticated
         return <Navigate to="/dashboard" />;
     }
 
