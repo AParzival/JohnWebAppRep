@@ -5,6 +5,7 @@ const express = require("express");
 const session = require('express-session');
 const path = require("path");
 const Profile = require('./model/Profile');
+const Post = require('./model/Post');
 const app = express();
 app.use(session({ secret: 'XASDASDA' }));
 
@@ -14,7 +15,8 @@ app.use(cors());
 
 const GC_RELEASE = "2024-01-13";
 //const MongoURL = "mongodb://localhost:27017/tom";
-const MongoURL = "mongodb+srv://appuser:AppData2022@cluster0.aga82.mongodb.net/tombook";
+//const MongoURL = "mongodb+srv://appuser:AppData2022@cluster0.aga82.mongodb.net/tombook";
+const MongoURL="mongodb+srv://admin:Test2024@cluster0.skxw5hl.mongodb.net/johnbook"
 mongoose.connect(MongoURL);
 
 app.get("/release", (req, res) => {
@@ -30,6 +32,30 @@ app.post("/profile", (req, res) => {
 app.get("/profiles", async (req, res) => {
   const data = await Profile.find({});
   console.log(data);
+    
+  res.send(data);
+});
+app.get("/profile/:id", async (req, res) => {
+  const id = req.params.id;
+  const data = await Profile.findById(id);
+    
+  res.send(data);
+});
+app.post("/post", (req, res) => {
+  const data = req.body;
+  console.log("profile:", data);
+  Post.create(data);
+  res.send({status:1, message:"Post Created"});
+})
+app.get("/posts", async (req, res) => {
+  const data = await Post.find({});
+  console.log(data);
+    
+  res.send(data);
+});
+app.get("/post/:id", async (req, res) => {
+  const id = req.params.id;
+  const data = await Post.findById(id);
     
   res.send(data);
 });

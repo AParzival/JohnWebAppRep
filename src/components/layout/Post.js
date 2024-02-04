@@ -5,7 +5,7 @@ import '../../Styles.css';
 
 const Post = () => {
     //const SERVER_ROOT_URL = "https://tombook.azurewebsites.net/"
-    const SERVER_ROOT_URL = localStorage.getItem("AWS_SERVER_ROOT");
+    const SERVER_ROOT_URL = localStorage.getItem("APP_SERVER_ROOT");
     console.log(SERVER_ROOT_URL);
     const { id } = useParams();
     console.log("ID", id);

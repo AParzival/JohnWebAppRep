@@ -1,15 +1,39 @@
 // Profile.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom'
 import backgroundImage from '../../images/background2.jpg';
 import User from './User.js'; // Update the path accordingly
 
 const Profile = () => {
   const [formData, setFormData] = useState(new User('', '', '', '', '', ''));
 
-  const SERVER_ROOT_URL = process.env.REACT_APP_SERVER_ROOT_URL || "http://localhost:8080"
+  const SERVER_ROOT_URL = localStorage.getItem("APP_SERVER_ROOT");
   //"https://john-webapp.azurewebsites.net";
   console.log("SERVER_ROOT_URL:",SERVER_ROOT_URL);
+  const { id } = useParams();
+;
+  console.log("ID", id);
+  useEffect(() => {
+    if (id !== undefined) {
+        loadData(id);
+    } else {
+        const currentUser = sessionStorage.getItem("currentUser");
+        if (currentUser !== null && currentUser !== undefined) {
+            const user = JSON.parse(currentUser);
+            loadData(user.id);
+        }
+    }
+}, []);
+
+const loadData = async (id) => {
+
+    const resp = await fetch(SERVER_ROOT_URL + "/profile/" + id);
+    const data = await resp.json();
+    console.log("Load Data", data);
+    sessionStorage.setItem("currentUser", JSON.stringify(data));
+      setFormData(data);
+}
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [id]: value }));

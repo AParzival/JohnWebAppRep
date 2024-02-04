@@ -5,7 +5,7 @@ import '../../scripts/profile.js';
 
 const PostForm = () => {
     //const SERVER_ROOT_URL = "https://tombook.azurewebsites.net/"
-    const SERVER_ROOT_URL = localStorage.getItem("AWS_SERVER_ROOT");
+    const SERVER_ROOT_URL = localStorage.getItem("APP_SERVER_ROOT");
     console.log(SERVER_ROOT_URL);
     const { id } = useParams();
     console.log("ID", id);
@@ -22,9 +22,9 @@ const PostForm = () => {
     }
 
     useEffect(() => {
-        const profileId = sessionStorage.getItem("currentUser");
-        setProfileId(profileId);
-        console.log("profileId", profileId)
+        const currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
+        setProfileId(currentUser._id);
+        console.log("currentUser", currentUser)
         if (id !== undefined) {
             loadData();
         }

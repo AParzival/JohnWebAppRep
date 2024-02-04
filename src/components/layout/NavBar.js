@@ -12,7 +12,9 @@ const NavBar = () => {
             <img src={logo} className='headerlogo' alt='logo in header'/>
             <li><Link to="/landing">Landing</Link></li>
             <li><Link to="/profile">Profile</Link></li>
-
+            <li><Link to="/profiles">Profiles</Link></li>
+          <li><Link to="/post">Post</Link></li>
+          <li><Link to="/posts">Posts</Link></li>
             </ul>
           </nav>
           
