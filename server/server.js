@@ -23,7 +23,7 @@ app.get("/release", (req, res) => {
 });
 app.post("/profile", (req, res) => {
     const data = req.body;
-    console.log(data);
+    console.log("profile:", data);
     Profile.create(data);
     res.send({status:1, message:"Profile Created"});
 })
@@ -33,9 +33,10 @@ app.get("/profiles", async (req, res) => {
     
   res.send(data);
 });
-app.use(express.static("./src/build"));
+app.use(express.static("../src/build"));
 app.get("*", (req, res) => {
-  res.send(__dirname, "dir", "build", "index.html");
+  console.log("ROOT");
+  res.send(__dirname,  "index.html");
 })
 app.listen(port, () => {
   console.log("listening on port:", port);

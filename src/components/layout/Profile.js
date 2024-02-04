@@ -2,13 +2,14 @@
 
 import React, { useState } from 'react';
 import backgroundImage from '../../images/background2.jpg';
-import User from '../../path/to/user.js'; // Update the path accordingly
+import User from './User.js'; // Update the path accordingly
 
 const Profile = () => {
   const [formData, setFormData] = useState(new User('', '', '', '', '', ''));
 
-  const SERVER_ROOT_URL = process.env.REACT_APP_SERVER_ROOT_URL || "https://john-webapp.azurewebsites.net/";
-
+  const SERVER_ROOT_URL = process.env.REACT_APP_SERVER_ROOT_URL || "http://localhost:8080"
+  //"https://john-webapp.azurewebsites.net";
+  console.log("SERVER_ROOT_URL:",SERVER_ROOT_URL);
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [id]: value }));
@@ -16,6 +17,7 @@ const Profile = () => {
 
   const submitData = async () => {
     try {
+      console.log("Form Date:", formData);
       const resp = await fetch(SERVER_ROOT_URL + "/profile", {
         method: "POST",
         headers: {
