@@ -27,7 +27,7 @@ app.post("/profile", (req, res) => {
     Profile.create(data);
     res.send({status:1, message:"Profile Created"});
 })
-app.get("/profile", async (req, res) => {
+app.get("/profiles", async (req, res) => {
   const data = await Profile.find({});
   console.log(data);
     
